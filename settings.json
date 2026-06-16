@@ -1,0 +1,66 @@
+{
+  "workbench.startupEditor": "none", // NÃO ABRIR ARQUIVO/PAINEL INICIAL (INICIA MAIS LIMPO E RÁPIDO)
+  "window.restoreWindows": "none", // NÃO RESTAURAR JANELAS/WORKSPACES ANTERIORES (STARTUP MAIS RÁPIDO)
+  "extensions.ignoreRecommendations": true, // REMOVER NOTIFICAÇÕES/RECOMENDAÇÕES DE EXTENSÕES
+  "editor.minimap.enabled": false, // REMOVER MINIMAP (MENOS RENDERIZAÇÃO)
+  "editor.stickyScroll.enabled": false, // DESATIVAR STICKY SCROLL NO EDITOR (MENOS PROCESSAMENTO VISUAL)
+  "workbench.tree.enableStickyScroll": false, // DESATIVAR STICKY SCROLL EM ÁRVORES (EXPLORER ETC.)
+  "task.autoDetect": "off", // NÃO AUTO-DETECTAR TASKS (REDUZ TRABALHO AUTOMÁTICO)
+  "npm.autoDetect": "off", // NÃO AUTO-DETECTAR NPM SCRIPTS (REDUZ EVENTOS EM PROJETOS JS/TS
+  "js/ts.tsserver.log": "off", // LOG DO TS SERVER DESLIGADO (BOM),
+  "files.associations": { // ASSOCIAÇÕES DE LINGUAGEM (UX; SEM IMPACTO RELEVANTE)
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "postcss",
+    ".dev.vars": "dotenv",
+    "*.ndjson": "jsonl"
+  },
+  "workbench.iconTheme": "symbols",
+  "editor.parameterHints.enabled": false, // DESLIGA DICAS DE PARÂMETRO (MENOS POPUP; PERFORMANCE LEVE)
+  "cSpell.language": "en,pt", // DICIONÁRIO ORTOGRÁFICO (PODE PESAR UM POUCO EM PROJETOS GRANDES; NORMALMENTE OK)
+  "workbench.editor.labelFormat": "short", // LABELS CURTOS NAS TABS (UX)
+  "explorer.compactFolders": false, // NÃO COMPACTAR PASTAS (UX; PERFORMANCE BAIXA)
+  "editor.accessibilitySupport": "off", // DESLIGA SUPORTE ACESSIBILIDADE (PODE AJUDAR EM PERFORMANCE LEVE)
+  "explorer.confirmDragAndDrop": false, // SEM CONFIRMAÇÃO DRAG/DROP (RISCO; SEM PERFORMANCE)
+  "terminal.integrated.fontSize": 14, // TAMANHO FONTE TERMINAL (VISUAL)
+  "gitlens.codeLens.authors.enabled": false, // DESLIGA CODELENS AUTORES (BOM, CODELENS PESA)
+  "security.workspace.trust.untrustedFiles": "newWindow", // ABRE ARQUIVO NÃO CONFIÁVEL EM NOVA JANELA (SEGURANÇA)
+  "files.exclude": { // OCULTA ARQUIVOS NO EXPLORER (UX; PERFORMANCE POUCA)
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/.git": true,
+    ".vscode": true
+    // "node_modules": true // COMENTADO: SE OCULTAR node_modules AJUDA NO RUÍDO; PERFORMANCE NÃO É O PRINCIPAL AQUI
+  },
+  "terminal.integrated.gpuAcceleration": "on", // GPU NO TERMINAL (GERALMENTE BOM; SE DER BUG/TRAVA, TROQUE PARA "off")
+  "[jsonc]": { // FORMATADOR PARA JSONC
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[json]": { // FORMATADOR PARA JSON
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }, // DESLIGA COMMAND CENTER (VISUAL; PODE AJUDAR UM POUCO)
+  "git.openRepositoryInParentFolders": "always", // ABRE REPO NO PAI (PODE CAUSAR WORKSPACE MAIOR DO QUE O NECESSÁRIO => PODE DEIXAR MAIS LENTO)
+  "workbench.editor.empty.hint": "hidden", // OCULTA HINT QUANDO NÃO TEM EDITOR (VISUAL)
+  "update.showReleaseNotes": false, // NÃO MOSTRAR RELEASE NOTES (UX)
+  "window.titleBarStyle": "custom", // TITLE BAR NATIVA (VISUAL/OS)
+  "editor.tokenColorCustomizations": { // CUSTOMIZAÇÃO DE CORES (VISUAL)
+    "textMateRules": []
+  },
+  "workbench.layoutControl.enabled": false, // ESCONDE CONTROLES DE LAYOUT (UX)
+  "gitlens.advanced.messages": { // SUPRESSÃO DE WARNINGS DO GITLENS (UX)
+    "suppressIntegrationDisconnectedTooManyFailedRequestsWarning": true,
+    "suppressIntegrationRequestTimedOutWarning": true
+  },
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
+  "chat.titleBar.signIn.enabled": false,
+  "workbench.browser.showInTitleBar": false,
+  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "workbench.activityBar.location": "top",
+  "claudeCode.preferredLocation": "panel",
+  "explorer.confirmPasteNative": false,
+}
