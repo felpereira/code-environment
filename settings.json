@@ -63,4 +63,6 @@
   "workbench.activityBar.location": "top",
   "claudeCode.preferredLocation": "panel",
   "explorer.confirmPasteNative": false,
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSaveMode": "modifications",
 }
